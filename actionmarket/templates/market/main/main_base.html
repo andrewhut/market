@@ -16,10 +16,32 @@
 
 {% endblock %}
 {% block header %}
+<header>
+    <div class="container p-null">
+        <div class="row">
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center"><a href="#">Головна</a></li>
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center"><a href="#">Категорії</a></li>
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center"><a href="#">Про нас</a></li>
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center"><a href="#">Вхід/Реєстрація</a></li>
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center cart"><a href="#">Кошик</a></li>
+            <li class="lg-2 md-2 sm-2 ex-2 t-a-center"><a class="search-b">Пошук</a></li>
+        </div>
+    </div>
+</header>
+<div class="search m-p-null">
+    <input type="search" placeholder="Search">
+    <div class="hide">
+        ^
+    </div>
+</div>
 
 {% endblock %}
+{% block content %}
+{% endblock %}
 {% block footer %}
-
+<footer class="t-a-center">
+    Інтернет магазин ACTION/MARKET створено студентом групи ПІс-15-1 Гут Андрієм
+</footer>
 {% endblock %}
 {% block main_scripts %}
 <script src="{% static 'js/jquery-2.2.0.js' %}" charset="utf-8"></script>
